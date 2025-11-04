@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .width {
+            width: 55px;
+        }
+
+        table {
+            border: 7px solid black;
+            background-color: lightgray;
+            border-collapse: collapse;
+        }
+
+        #td {
+            font-family: "Comic Sans MS";
+            text-align: center;
+            color: white;
+            background-color: gray;
+            font-size: 10pt;
+            padding: 5px;
+        }
+
+        input[type="text"] {
+            width: 120px;
+            text-align: right;
+            font-size: 12pt;
+        }
+
+        input[type="button"] {
+            font-size: 12pt;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4" id="td">Calculator</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input id="Answer" type="text">
+            </td>
+            <td>
+                <input type="button" class="width" value="=" onclick="EnterEqual()">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="width" value="1" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="2" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="3" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="+" onclick="EnterOperator(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="width" value="4" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="5" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="6" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="-" onclick="EnterOperator(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="width" value="7" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="8" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="9" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="*" onclick="EnterOperator(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="width" value="C" onclick="EnterClear()"></td>
+            <td><input type="button" class="width" value="0" onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="." onclick="EnterNumber(this.value)"></td>
+            <td><input type="button" class="width" value="/" onclick="EnterOperator(this.value)"></td>
+        </tr>
+    </table>
+
+    <script src="Lab3.js"></script>
+</body>
+</html>

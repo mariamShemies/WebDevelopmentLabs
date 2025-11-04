@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(191, 181, 253);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+.container{
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+}
